@@ -4,8 +4,8 @@ RUN apt-get update && apt-get install -y \
     gcc \
     python3-dev
 
-COPY qrng/app.py .
-COPY qrng/requirements.txt .
+COPY app/app.py .
+COPY app/requirements.txt .
 
 RUN python3.9 -m pip install -r requirements.txt
 
