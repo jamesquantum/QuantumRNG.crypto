@@ -7,7 +7,7 @@ function RandomNumberGenerator() {
     try {
       const response = await fetch('https://api.cnot.xyz/qrng', {
         method: 'POST',
-        mode: 'no-cors',
+        mode: 'cors',
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
