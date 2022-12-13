@@ -12,7 +12,7 @@ const MarkdownViewer = (props) => {
   }, [props.markdownUrl]);
 
   return (
-    <div>
+    <div style={{ backgroundColor: '#F4C4F3', padding: '20px' }}>
       <div dangerouslySetInnerHTML={{ __html: markdown }} />
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
-import MarkdownViewer from './MarkdownViewer';
-import RandomNumberGenerator from './RandomNumberGenerator';
+import MarkdownViewer from './Components/MarkdownViewer';
+import RandomNumberGenerator from './Components/RandomNumberGenerator';
 
 
 
