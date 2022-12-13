@@ -1,10 +1,10 @@
 from flask import Flask, request, Response
 import json
-# from flask_cors import CORS
+from flask_cors import CORS
 from qiskit import QuantumCircuit, QuantumRegister, ClassicalRegister, execute, Aer
 
 app = Flask(__name__)
-# CORS(app)
+CORS(app)
 
 @app.route('/', methods=['GET'])
 def healthy():
