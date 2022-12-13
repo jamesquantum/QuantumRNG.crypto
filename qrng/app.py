@@ -6,7 +6,11 @@ from qiskit import QuantumCircuit, QuantumRegister, ClassicalRegister, execute, 
 app = Flask(__name__)
 # CORS(app)
 
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['GET'])
+def healthy():
+    return json.dumps({'success':True}), 200, {'ContentType':'application/json'} 
+
+@app.route('/qrng', methods=['POST'])
 def generate_random_number() -> str:
     # Get the length of the random number to generate from the request body
     print(request.json)

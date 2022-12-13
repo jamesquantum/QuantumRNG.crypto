@@ -6,9 +6,9 @@ function RandomNumberGenerator() {
   async function generateRandomNumber() {
     console.log(JSON.stringify({length: 5 }));
     try {
-      const response = await fetch('http://0.0.0.0:5000', {
+      const response = await fetch('https://api.cnot.xyz/qrng', {
         method: 'POST',
-        mode: 'cors',
+        // mode: 'cors',
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
