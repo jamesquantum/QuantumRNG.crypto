@@ -4,16 +4,15 @@ function RandomNumberGenerator() {
   const [randomNum, setRandomNum] = useState(null);
 
   async function generateRandomNumber() {
-    console.log(JSON.stringify({length: 5 }));
     try {
       const response = await fetch('https://api.cnot.xyz/qrng', {
         method: 'POST',
-        // mode: 'cors',
+        mode: 'cors',
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
         },
-        body: JSON.stringify({length: 5 })
+        body: JSON.stringify({length: 10})
       });
       
       const json = await response.json();
