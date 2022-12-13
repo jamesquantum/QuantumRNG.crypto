@@ -32,6 +32,11 @@ In addition, web3 platforms could also implement measures to ensure that the use
 
 Overall, while the use of quantum computers as a source of randomness for web3 platforms has many benefits, it is important to carefully consider the potential issues and take steps to mitigate them. By implementing a hybrid approach and promoting transparency, web3 platforms can ensure that the use of quantum computers for VRNGs is decentralized and fair.
 
+## It's been done
+API3 and The Australian National University (ANU) Quantum Optics Group have already [created an oracle for this purpose](https://api3.org/QRNG).
+
+![Gif of George Harrison from the Beatles in the Simpsons mouthing "It's been done"](https://media.tenor.com/aFhfFNKcjGUAAAAS/george-harrison-beatles.gif)
+
 ## Creating a service
 
 To host a QRNG service on the web, a number of different components are required. These include:
