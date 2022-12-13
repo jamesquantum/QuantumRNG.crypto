@@ -1,4 +1,4 @@
-# QuantumRNG.crypto
+# ipfs://QuantumRNG.crypto
 
 ## The need for VRNG
 
